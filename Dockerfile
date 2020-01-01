@@ -20,4 +20,4 @@ RUN  mkdir /home/Downloads
 # SASS UBUNTU
 RUN wget -O /home/Downloads/sass.tar.gz "https://github.com/sass/dart-sass/releases/download/1.24.0/dart-sass-1.24.0-linux-x64.tar.gz"
 RUN tar -xvzf /home/Downloads/sass.tar.gz -C /opt
-RUN echo 'export PATH="opt/dart-sass:$PATH"' >> ~/.bashrc
+RUN echo 'export PATH="/opt/dart-sass:$PATH"' >> ~/.bashrc
