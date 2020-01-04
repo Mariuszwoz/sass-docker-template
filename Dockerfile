@@ -1,11 +1,10 @@
-FROM ubuntu:latest      
+FROM ubuntu:18.04
 
 # update apt-get and apt
 RUN apt-get update -y
 RUN apt update -y
 
 # midnight commander
-# check if needed RUN sudo add-apt-repository universe
 RUN apt install mc -y
 RUN echo 'alias mc=". /usr/lib/mc/mc-wrapper.sh"' >> ~/.bashrc
 
